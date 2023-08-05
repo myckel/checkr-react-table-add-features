@@ -1,0 +1,21 @@
+.app-title {
+  text-align: center;
+}
+
+img.flag {
+  max-width: 100px;
+}
+
+.table.table-striped {
+  table-layout: fixed;
+}
+
+.table.table-striped th,
+.table.table-striped td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr.highlight td {
+  background-color: #07fffb;
+}

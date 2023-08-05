@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+src="$(cd "${dir}/../src" && pwd)"
+
+docker run -it --rm \
+  --publish 127.0.0.1:3000:3000 \
+  --volume "${src}":/app/src \
+  checkr-interviews/web-feature-add-react \
+  "$@"
